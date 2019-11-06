@@ -17,6 +17,8 @@ textarea {
     background-color: #7599b3;
     padding: 100px 0 150px;
     box-sizing: border-box;
+    position: relative;
+    z-index: 500;
 }
 .login-form {
     display: block;
@@ -123,30 +125,25 @@ textarea {
 .login-form-reset_pass a {
     font-weight: 500;
 }
-
-
-
-
-
-.login-form:before {
+.container:before {
     width: 55px;
     content: "";
     height: 30px;
     background-color: #263a53;
     position: absolute;
     transform: rotate(20deg);
-    left: -46px;
-    top: 435px;
+    left: 603px;
+    top: 535px;
     z-index: -991;
 }
-.login-form:after {
+.container::after {
     width: 55px;
     content: "";
     height: 30px;
     background-color:#263a53;
     position: absolute;
     transform: rotate(340deg);
-    right: -45px;
-    top: 435px;
+    right: 605px;
+    top: 535px;
     z-index: -1;
 }
